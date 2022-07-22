@@ -1,0 +1,673 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box; 
+}
+/*body*/
+.container-fluid{
+
+	background:#fff;
+}
+
+/*setup display styling*/
+
+/*Mother div start*/
+.setupMenu{
+	height:100vh;
+	background:#15293B;
+	padding:20px;
+	display:;       
+}
+/*Mother div end*/
+
+.setupMenu .heading{
+	text-align:center;
+	color:#fff; 
+	margin-top:40px; 
+	margin-bottom:40px; 
+}
+
+/*bottom div styling*/
+.setupMenu .bottom{
+	display:flex;
+	justify-content:center;
+	padding:10px;   
+}
+.setupMenu .interface{
+	padding:10px;
+	border-radius:8px;
+	background:#fcfcfc;  
+}
+
+.setupMenu .interface h6{
+	color:#bcced9;
+	padding:5px;  
+}
+
+/*buttons*/
+.setupMenu .interface .themeButtons{
+	display:flex;
+	justify-content:space-between;
+	padding:10px;   
+}
+
+.setupMenu .interface .themeButtons .numbers{
+	background:#15293b; 
+    width:160px;
+    color:#fff;
+    border-radius:20px;  
+}
+.setupMenu .interface .themeButtons .icons{
+   background:#bcced9; 
+   width:160px;
+   color:#fff;
+   border-radius:20px; 
+}
+.setupMenu .interface .themeButtons .icons:hover{
+	background:#6395b8; 
+}
+
+/* */
+
+.setupMenu .interface .playersbuttons{
+	display:flex;
+	justify-content:space-between;
+	padding:10px;
+}
+.setupMenu .interface .playersbuttons .one{
+	background:#15293b; 
+    width:95px;
+    color:#fff;
+    border-radius:20px;
+}
+.setupMenu .interface .playersbuttons .two{
+   background:#bcced9; 
+   width:95px;
+   color:#fff;
+   border-radius:20px;
+   padding:2px;
+} 
+.setupMenu .interface .playersbuttons .two:hover{
+	background:#6395b8; 
+}
+.setupMenu .interface .playersbuttons .three{
+   background:#bcced9; 
+   width:95px;
+   color:#fff;
+   border-radius:20px;
+   padding:2px;	
+} 
+.setupMenu .interface .playersbuttons .three:hover{
+	background:#6395b8; 
+}
+.setupMenu .interface .playersbuttons .four{
+   background:#bcced9; 
+   width:95px;
+   color:#fff;
+   border-radius:20px;
+   padding:2px;	
+} 
+.setupMenu .interface .playersbuttons .four:hover{
+	background:#6395b8; 
+}
+
+/* */
+.setupMenu .interface .gridSize{
+	display:flex;
+	justify-content:space-between;
+	padding:10px;   
+}
+.setupMenu .interface .gridSize .button4x4{
+	background:#15293b; 
+    width:160px;
+    color:#fff;
+    border-radius:20px;  
+}
+.setupMenu .interface .gridSize .button16x16{
+   background:#bcced9; 
+   width:160px;
+   color:#fff;
+   border-radius:20px; 
+}
+.setupMenu .interface .gridSize .button16x16:hover{
+	background:#6395b8; 
+}
+
+/*  */
+
+.setupMenu .interface .btnStart{
+    padding:10px;
+}
+.setupMenu .interface .btnStart .startbutton{	
+   background:#fda214; 
+   width:100%;
+   color:#fff;
+   border-radius:20px;
+
+}
+.setupMenu .interface .btnStart .startbutton:hover{
+	background:#ffae42; 
+}
+
+
+
+/*game board display styling*/
+
+/*Mother div start*/
+.startGame{
+	height:100vh;
+	background:#fcfcfc;
+	padding:10px;
+	display:none; 
+}
+/*Mother div end*/
+
+.startGame .heading{
+	padding:20px;
+}
+.startGame .heading .logo{
+	padding:10px;
+	font-weight:bold;
+	font-size:24px;   
+}
+
+/* button for menu control in smaller device screen*/
+.startGame .heading .burger{
+	float:right;
+	width:120px;
+	margin:11px; 
+	font-weight:bold;
+	border:1px solid #fda214;
+	background-color:#fda214; 
+	color:#fff; 
+	border-radius:20px; 
+	display:none;   
+}
+.startGame .heading #check{
+	display:none; 
+}
+
+
+/* */
+.startGame .heading .menu{
+	float:right; 
+}
+.startGame .heading .menu li{
+	list-style:none;
+	display:inline-block;
+	margin:10px;  
+}
+.startGame .heading .menu .restart{
+	width:120px;
+	color:#fff;
+	font-weight:bold;  
+	background:#fda214;
+	border-radius:20px;
+
+}
+.startGame .heading .menu .newGame{
+	width:120px; 
+	color:#15293b;
+	font-weight:bold;  
+	background:#bcced9; 
+	border-radius:20px; 
+	
+}
+.startGame .heading .menu .resume{
+	width:120px; 
+	color:#15293b;
+	font-weight:bold;  
+	background:#bcced9; 
+	border-radius:20px;
+	display:none;   
+}
+
+
+/*game interface styling*/
+
+.startGame .middle{
+	padding:15px;
+	background-color:#fff;
+	border-radius:2px;
+	margin-top:50px; 
+	display:flex;
+	justify-content:center;      
+}
+.startGame .gameInterface{
+	padding:10px;
+	border-radius:2px;
+	display:flex;
+	justify-content:center;   
+}
+.startGame  .gridtemp_4x4{
+	display:grid;
+	grid-template-columns:repeat(4, 3rem); 
+	grid-template-rows:repeat(4, 3rem);
+	grid-gap:2rem; 
+    border-radius:6px;  
+}
+.startGame .gridtemp_16x16{
+	display:grid;
+	grid-template-columns:repeat(6, 3rem); 
+	grid-template-rows:repeat(6, 3rem);
+	grid-gap:2rem; 
+
+}
+
+ .card{
+	position:relative;
+	transition:all 1s;  
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center; 
+	cursor:pointer;
+	color:#15293b;  
+	border-radius:50% !important;
+	background:#15293b !important;     
+}
+
+.toggleCards{
+	background-color:#bcced9 !important;
+	color:#fff;
+	font-weight:bold;       
+}
+
+
+.matched{
+	background-color:#fda214 !important;
+}
+
+
+.togglePlayer{
+	background:#fda214 !important;
+}
+.togglePlayer label{
+	color:#fff !important;
+}
+.togglePlayer span{
+	color:#fff !important;
+}
+
+/*players display parent div styling*/
+
+.startGame .bottomForPlayersDiv{
+	padding:10px;
+	background-color:#fff;
+	border-radius:2px;
+}
+
+.startGame .bottomForSingle{
+	padding:10px;
+	background-color:#fff;
+	border-radius:2px;
+	display:flex;  
+	justify-content:center;
+	display:none;
+}
+.startGame .bottomForMultiple{
+	padding:10px;
+	background-color:#fff;
+	border-radius:2px;
+	display:flex;
+	justify-content:center;
+	display:none;
+}
+
+/*players display parent div styling*/
+
+
+
+/*player one or one player*/
+
+.single{
+	padding:10px; 
+	background:#bcced9; 
+	margin:10px; 
+	border-radius:6px; 
+	display:flex; 
+	justify-content:space-between;  
+}
+.single-label{
+   font-weight:bold; 
+   color:#7191a5;
+}
+.single-span{
+    color:#15293b; 
+    font-weight:bold; 
+}
+
+
+
+/*multiplayer styling*/
+
+.fourPlayers{
+	padding:2px;
+	display:flex;
+	justify-content:center; 
+	font-size:12px; 
+}
+.forTurns{
+	padding:0px;
+	display:flex;
+	justify-content:center 
+}
+.multiple{
+	padding:5px; 
+	margin:5px;
+	background:#bcced9; 
+	border-radius:6px;
+	display:flex; 
+	justify-content:space-between; 
+	cursor:pointer; 
+}
+.turns{
+	padding:0px; 
+	margin:0px; 
+	display:flex; 
+	justify-content:center;
+	font-size:10px;  
+}
+.multiplayer-label{
+    
+    color:#7191a5; 
+}
+.multiplayer-span{
+	color:#15293b; 
+    font-weight:bold;
+}
+
+
+
+
+
+/* multiplayer dialog box styling*/
+#Multi_dialog{
+	position:absolute;
+	bottom:40px; 
+	left:400px; 
+	height:;
+	background:#fff;
+    border-radius:8px;
+    padding:20px; 
+    box-shadow:8px 8px 8px rgba(0,0,0,0.3); 
+    z-index:3; 
+    display:none; 
+ 
+}
+#Multi_dialog .head{
+	font-size:25px;
+	font-weight:bold;  
+	text-align:center;
+	color:#15293b; 
+}
+#Multi_dialog .title{
+	padding:10px;
+	text-align:center; 
+    color:#7191a5;
+}
+#Multi_dialog .body{
+	padding:10px; 
+    text-align:center; 
+}
+#Multi_dialog .body .first, .second, .third, .forth{
+	padding:10px;
+	margin:10px;
+	background:#bcced9;
+	color:white;
+	border-radius:8px;
+	display:flex;
+	justify-content:space-between;   
+}
+#Multi_dialog .foot{
+	padding:10px; 
+}
+#Multi_dialog .foot .resets{
+	padding:10px;
+	list-style:none; 
+	text-align:center;  
+}
+#Multi_dialog .foot .resets li{
+	display:inline-block;  
+}
+#Multi_dialog .foot .resets .restart{
+	background:#fda214; 
+	border-radius:22px;
+	width:130px;
+	margin:10px;
+	color:#fff;
+	font-weight:bold; 
+	font-size:12px; 
+}
+#Multi_dialog .foot .resets .newGame{
+	background:#bcced9; 
+	border-radius:22px;
+	width:160px;
+	margin:10px;
+	color:#15293b;
+	font-weight:bold; 
+	font-size:12px;
+}
+
+
+/*single player dialog box styling*/
+
+#single_dialog{
+	position:absolute;
+	bottom:160px; 
+	left:400px; 
+	height:;
+	background:#fff;
+    border-radius:8px;
+    padding:20px; 
+    box-shadow:8px 8px 8px rgba(0,0,0,0.3); 
+    z-index:4;
+    display:none; 
+}
+#single_dialog .single_head{
+	font-size:25px;
+	font-weight:bold;  
+	text-align:center;
+	color:#15293b;
+}
+#single_dialog .single_title{
+	padding:10px;
+	text-align:center; 
+    color:#7191a5;
+}
+#single_dialog .single_body{
+    padding:10px; 
+    text-align:center;
+}
+#single_dialog .single_body .time, .moves{
+	padding:10px;
+	margin:10px;
+	background:#bcced9;
+	color:white;
+	border-radius:8px;
+	display:flex;
+	justify-content:space-between;
+}
+
+#single_dialog .single_foot{
+	padding:10px;
+}
+#single_dialog .single_foot .single_resets{
+    padding:10px;
+	list-style:none; 
+	text-align:center;
+}
+#single_dialog .single_foot .single_resets li{
+	display:inline-block; 
+}
+#single_dialog .single_foot .single_resets .restart{
+    background:#fda214; 
+	border-radius:22px;
+	width:130px;
+	margin:10px;
+	color:#fff;
+	font-weight:bold; 
+	font-size:12px; 
+}
+#single_dialog .single_foot .single_resets .newGame{
+    background:#bcced9; 
+	border-radius:22px;
+	width:160px;
+	margin:10px;
+	color:#15293b;
+	font-weight:bold; 
+	font-size:12px;
+}
+
+
+/*single player dialog box styling*/
+
+
+/* tablet devices */
+
+@media(max-width:768px){
+
+/* multiplayer dialog box styling*/
+#Multi_dialog{
+   left:200px;
+   bottom:320px; 
+}
+
+
+/*single player dialog box styling*/
+#single_dialog{
+   left:200px;
+   bottom:420px;
+}
+  
+}
+
+/* tablet devices */
+
+
+
+/* Smaller devices */
+
+@media(min-width:200px) and (max-width:576px){
+ 
+/*drop down menu*/ 
+.startGame .heading .burger{
+	float:right;
+	width:120px;
+	margin:11px; 
+	font-weight:bold;
+	border:1px solid #fda214;
+	background-color:#fda214; 
+	color:#fff; 
+	border-radius:20px; 
+	display:block;   
+}
+
+.startGame .heading .menu{
+	display:none; 
+	position:absolute;
+	padding:40px 20px 20px 20px; 
+	width:70%; 
+	height:50vh;
+	top:140px;
+	left:60px;
+	background:#fff;
+	border-radius:10px; 
+	z-index:2; 
+	text-align:center;  
+	box-shadow:9px 9px 9px rgba(0,0,0,0.3); 
+	transition:all 10s;   
+}
+
+.startGame .heading .menu li{
+    display:block;
+    line-height:70px;  
+}
+.startGame .heading .menu .restart{
+	width:100%; 
+}
+.startGame .heading .menu .newGame{
+	width:100%; 
+}
+.startGame .heading .menu .newGame{
+	width:100%; 
+}
+.startGame .heading .menu .resume{
+	width:100%; 
+	display:block; 
+}
+
+#check:checked ~ .menu{
+	display:block;
+}
+/*drop down menu*/
+
+/*single player label span disatace*/
+.onePlayer .time{
+	margin-right: 15px;
+}
+.onePlayer .time label{
+	margin-right: 10px;
+}
+.onePlayer .moves label{
+	margin-right: 10px;
+}
+/*single player label span disatace*/
+
+
+/*multiplayer distance btween label and span*/
+.multiplayer .player1 label{
+	margin-right: 10px;
+}
+
+.multiplayer .player2 label{
+	margin-right: 10px;
+}
+
+.multiplayer .player3 label{
+	margin-right: 10px;
+}
+
+.multiplayer .player4 label{
+	margin-right: 10px;
+}
+/*multiplayer distance btween label and span*/
+
+
+/*multiplayer dialog box styling*/
+#Multi_dialog{
+   left:35px;
+   bottom:100px; 
+}
+
+/*footer buttons of multiplayer dialog box*/
+#Multi_dialog .foot .resets li{
+	display:block; 
+}
+#Multi_dialog .foot .resets .restart{
+	width:100%;
+}
+#Multi_dialog .foot .resets .newGame{
+	width:100%;
+}
+
+/*singleplayer dialog box styling*/
+
+#single_dialog{
+   left:35px;
+   bottom:300px;
+
+}
+
+/*footer button for singleplayer dialog box*/
+#single_dialog .single_foot .single_resets{
+   display:block; 
+}
+#single_dialog .single_foot .single_resets .restart{
+   width:100%;
+}
+#single_dialog .single_foot .single_resets .newGame{
+   width:100%;
+}
+
+}

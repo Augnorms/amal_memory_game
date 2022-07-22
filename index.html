@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <title>Frontend Mentor | Memory game</title>
+</head>
+
+<body class="container-fluid">
+
+  <!-- Game setup start -->
+
+   <div class="row">
+
+    <div class="col-sm-6 col-md-12 setupMenu">
+
+      <div class="col-12 heading"><!--heading start-->
+        <h1>Memory</h1>
+
+      </div><!--heading end-->
+
+
+      <div class="col-12 bottom"><!--bottom start-->
+
+        <div class="col-xs-4 col-sm-7 col-md-4 interface">
+
+          <h6 class="text">Select Theme</h6>
+          <div class="col-12 themeButtons">
+            <button class="btn numbers">Numbers</button>
+            <button class="btn icons">Icons</button>
+          </div><!--end of theme button-->
+          
+          <h6>Number Of Players</h6>
+          <div class="col-12 playersbuttons">
+            <button class="btn one" value="0">1</button>
+            <button class="btn two" >2</button>
+            <button class="btn three" >3</button>
+            <button class="btn four" value="1">4</button>
+          </div><!--end of players button-->
+
+          <h6>Grid Size</h6>
+          <div class="col-12 gridSize">
+            <button class="btn button4x4" value="0">4x4</button>
+            <button class="btn button16x16" value="1">6x6</button>
+          </div><!--end of gris size buttons-->
+
+         <div class="col-12 btnStart">
+           <button class="btn startbutton">Start</button>
+         </div><!--end of start button-->
+
+        </div>
+  
+      </div><!--bottom end-->
+      
+    </div>
+
+     
+   </div><!--first row-->
+
+  <!-- Game setup end -->
+
+
+
+
+  <!--Game board start-->
+  <div class="container"> 
+
+   <div class="row"> <!--second row start-->
+
+    <div class="col-12 startGame">
+
+      <div class="col-12 heading"><!--head start-->
+
+        <label class="logo">memory</label>
+
+        <label class="btn burger" for="check">Menu</label>
+        <input type="checkbox" id="check">
+
+        <ul class="menu">
+          <li><a class="btn restart" href="#">Restart</a></li>
+          <li><a class="btn newGame" href="#">New Game</a></li>
+          <li><a class="btn resume" href="#">Resume</a></li>
+        </ul>
+
+
+      </div> <!--head end-->
+
+     
+      <!--memory game interface-->
+
+        <div class="col-12 middle">
+
+          <div class="col-xs-4 col-md-6 col-lg-6 gameInterface">
+          	
+          </div>
+        	
+        </div>
+
+      <!--memory game interface-->
+
+
+      <!--players display-->
+
+       <div class="col-12 bottomForPlayersDiv">
+
+        <div class="col-12 bottomForSingle">
+
+          <div class="col-sm-4 col-md-3 single">
+
+            <label class="single-label">Time:</label> 
+
+            <div>
+              <span class="single-span" id="time"></span>
+            </div>
+
+          </div>
+
+
+          <div class="col-sm-4 col-md-3 single">
+
+            <label class="single-label">Moves:</label> 
+
+            <div>
+              <span class="single-span" id="moves"></span>
+            </div>
+
+          </div>
+
+       </div>
+
+
+<!-- ################################################################-->
+
+
+      <div class="col-12 bottomForMultiple">
+
+        <div class="col-12 fourPlayers"><!--multiplayer info-->
+           
+              <div class="col-sm-3 col-md-2 multiple" id="player1">
+
+                <div>
+                  <label class="multiplayer-label">Player1</label>
+                </div>
+
+                <div>
+                  <span class="multiplayer-span" id="pl1moves">0</span>
+                </div>
+                
+              </div>
+             
+<!-- ################################################################-->
+
+              <div class="col-sm-3 col-md-2 multiple" id="player2">
+
+                <div>
+                  <label class="multiplayer-label">Player2</label>
+                </div>
+
+                <div>
+                  <span class="multiplayer-span" id="pl2moves">0</span>
+                </div>
+                
+              </div>
+
+ <!-- ################################################################-->             
+
+              <div class="col-sm-3 col-md-2 multiple" id="player3">
+
+                <div>
+                  <label class="multiplayer-label">Player3</label>
+                </div>
+
+                <div>
+                  <span class="multiplayer-span" id="pl3moves">0</span>
+                </div>
+                
+              </div>
+
+<!-- ################################################################-->              
+
+              <div class="col-sm-3 col-md-2 multiple" id="player4">
+
+                <div>
+                  <label class="multiplayer-label">Player4</label>
+                </div>
+
+                <div>
+                  <span class="multiplayer-span" id="pl4moves">0</span>
+                </div>
+                
+              </div>
+            
+    </div><!--multiplayer info-->
+
+ </div>
+<!-- ################################################################--> 
+ <div class="col-12 forTurns">
+   <div class="col-sm-3 col-md-2 turns" id="forP1"></div>
+
+   <div class="col-sm-3 col-md-2 turns" id="forP2"></div>
+
+   <div class="col-sm-3 col-md-2 turns" id="forP3"></div>
+
+   <div class="col-sm-3 col-md-2 turns" id="forP4"></div>
+ </div>
+<!-- ################################################################--> 
+       </div><!--bottom-->
+
+      <!--players display-->
+
+       
+    </div><!--startGame End-->
+     
+   </div> <!--second row/container end-->
+
+
+
+
+<!--Multiplayer dialog box-->
+
+    <div class="col-sm-8 col-md-6 col-lg-4" id="Multi_dialog">
+
+    	<div class="col-12 head">
+    		Player3 wins!
+    	</div>
+
+      <div class="col-12 title">
+        Game over! here are the results...
+      </div>
+
+    	<div class="col-12 body">
+
+        <div class="col-12 first">
+
+          <span class="play1winner" style="font-size:12px;">player1</span>
+          <h5 class="play1pairs"></h5>
+          
+        </div>
+
+        <div class="col-12 second">
+
+          <span class="play2winner" style="font-size:12px;">player2</span>
+          <h5 class="play2pairs"></h5>
+          
+        </div>
+
+        <div class="col-12 third">
+
+          <span class="play3winner" style="font-size:12px;">player3</span>
+          <h5 class="play3pairs"></h5>
+          
+        </div>
+
+        <div class="col-12 forth">
+
+          <span class="play4winner" style="font-size:12px;">player4</span>
+          <h5 class="play4pairs"></h5>
+          
+        </div>
+    		
+    	</div>
+
+
+    	<div class="col-12 foot">
+ 
+          <ul class="resets">
+            <li><a class="btn restart" id="multiDiagRest" href="#">Restart</a></li>
+            <li><a class="btn newGame" id="multiDiagNew" href="#">Setup New Game</a></li>
+          </ul>
+    		
+    	</div>
+    	
+    </div>
+
+<!--Multiplayer dialog box-->
+
+
+<!--single player dialog box-->
+
+   <div class="col-sm-8 col-md-6 col-lg-4" id="single_dialog">
+     
+     <div class="col-12 single_head">
+       You did it!
+     </div>
+
+     <div class="col-12 single_title">
+       Game over! Here is how you got on..
+     </div>
+
+     <div class="col-12 single_body">
+
+      <div class="col-12 time">
+
+          <span class="single_time" style="font-size:12px; color:#7191a5">Time Elapsed</span>
+          <h5 class="timeDisplay" style="color:#15293b;">0</h5>
+          
+        </div>
+
+        <div class="col-12 moves">
+
+          <span class="single_moves" style="font-size:12px; color:#7191a5">Moves</span>
+          <h5 class="movesDisplay" style="color:#15293b;">0</h5>
+          
+        </div>
+       
+     </div>
+
+     <div class="single_foot">
+
+          <ul class="single_resets">
+            <li><a class="btn restart" id="singleDialogRestart" href="#">Restart</a></li>
+            <li><a class="btn newGame" id="singleDailogNewGame" href="#">Setup New Game</a></li>
+          </ul>
+       
+     </div>
+
+   </div>
+
+<!--single player dialog box-->
+
+  </div>  
+  <!--Game board end-->
+ 
+
+<script type="module" src="numbers.js"></script> 
+<script type="module" src="icons.js"></script>
+</body>
+</html>
